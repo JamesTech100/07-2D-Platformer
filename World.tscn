@@ -1,0 +1,1544 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Portal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://castleMid.png" type="Texture" id=3]
+
+[node name="World" type="Node"]
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 192.104, 1038.32 )
+
+[node name="Walls" type="Node" parent="."]
+
+[node name="Wall" type="StaticBody2D" parent="Walls"]
+position = Vector2( 192, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall2" type="StaticBody2D" parent="Walls"]
+position = Vector2( 256, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall2"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall2"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall3" type="StaticBody2D" parent="Walls"]
+position = Vector2( 320, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall3"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall3"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall4" type="StaticBody2D" parent="Walls"]
+position = Vector2( 384, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall4"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall4"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall5" type="StaticBody2D" parent="Walls"]
+position = Vector2( 448, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall5"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall5"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall6" type="StaticBody2D" parent="Walls"]
+position = Vector2( 512, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall6"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall6"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall7" type="StaticBody2D" parent="Walls"]
+position = Vector2( 512, 1089.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall7"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall7"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall8" type="StaticBody2D" parent="Walls"]
+position = Vector2( 128, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall8"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall8"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall9" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall9"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall9"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall10" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 1089.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall10"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall10"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall11" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 1025.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall11"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall11"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall12" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 961.563 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall12"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall12"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall13" type="StaticBody2D" parent="Walls"]
+position = Vector2( 576, 1089.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall13"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall13"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall14" type="StaticBody2D" parent="Walls"]
+position = Vector2( 640, 1025.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall14"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall14"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall15" type="StaticBody2D" parent="Walls"]
+position = Vector2( 576, 1025.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall15"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall15"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall16" type="StaticBody2D" parent="Walls"]
+position = Vector2( 640, 961.563 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall16"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall16"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall17" type="StaticBody2D" parent="Walls"]
+position = Vector2( 448, 831.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall17"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall17"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall18" type="StaticBody2D" parent="Walls"]
+position = Vector2( 512, 831.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall18"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall18"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall19" type="StaticBody2D" parent="Walls"]
+position = Vector2( 384, 832 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall19"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall19"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall20" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 896 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall20"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall20"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall21" type="StaticBody2D" parent="Walls"]
+position = Vector2( 320, 831.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall21"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall21"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall22" type="StaticBody2D" parent="Walls"]
+position = Vector2( 256, 640 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall22"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall22"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall35" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 640 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall35"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall35"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall36" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 704 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall36"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall36"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall37" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 768 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall37"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall37"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall40" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 832 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall40"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall40"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall39" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 896 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall39"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall39"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall38" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 960 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall38"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall38"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall43" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1025.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall43"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall43"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall42" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1089.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall42"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall42"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall41" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1153.56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall41"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall41"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall44" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1216 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall44"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall44"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall103" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1280 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall103"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall103"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall102" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1344 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall102"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall102"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall101" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1406.44 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall101"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall101"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall45" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1472 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall45"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall45"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall46" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall46"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall46"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall79" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1472 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall79"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall79"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall78" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall78"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall78"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall77" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1598.44 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall77"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall77"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall76" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1662.44 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall76"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall76"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall75" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1726.44 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall75"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall75"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall84" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1152 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall84"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall84"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall83" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1216 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall83"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall83"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall82" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1278.44 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall82"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall82"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall81" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1342.44 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall81"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall81"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall80" type="StaticBody2D" parent="Walls"]
+position = Vector2( 1024.08, 1408 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall80"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall80"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall63" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1600 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall63"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall63"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall62" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1664 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall62"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall62"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall61" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall61"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall61"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall98" type="StaticBody2D" parent="Walls"]
+position = Vector2( -64, 1664 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall98"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall98"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall99" type="StaticBody2D" parent="Walls"]
+position = Vector2( -64, 1600 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall99"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall99"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall100" type="StaticBody2D" parent="Walls"]
+position = Vector2( -64, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall100"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall100"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall49" type="StaticBody2D" parent="Walls"]
+position = Vector2( 96.0518, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall49"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall49"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall48" type="StaticBody2D" parent="Walls"]
+position = Vector2( 160.052, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall48"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall48"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall51" type="StaticBody2D" parent="Walls"]
+position = Vector2( 224.129, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall51"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall51"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall50" type="StaticBody2D" parent="Walls"]
+position = Vector2( 448, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall50"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall50"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall53" type="StaticBody2D" parent="Walls"]
+position = Vector2( 511.923, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall53"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall53"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall52" type="StaticBody2D" parent="Walls"]
+position = Vector2( 384, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall52"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall52"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall74" type="StaticBody2D" parent="Walls"]
+position = Vector2( 896.077, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall74"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall74"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall73" type="StaticBody2D" parent="Walls"]
+position = Vector2( 960, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall73"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall73"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall72" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 1536 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall72"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall72"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall97" type="StaticBody2D" parent="Walls"]
+position = Vector2( 640, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall97"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall97"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall60" type="StaticBody2D" parent="Walls"]
+position = Vector2( 0, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall60"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall60"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall59" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall59"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall59"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall58" type="StaticBody2D" parent="Walls"]
+position = Vector2( 128, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall58"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall58"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall57" type="StaticBody2D" parent="Walls"]
+position = Vector2( 192.077, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall57"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall57"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall56" type="StaticBody2D" parent="Walls"]
+position = Vector2( 256.077, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall56"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall56"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall55" type="StaticBody2D" parent="Walls"]
+position = Vector2( 320, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall55"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall55"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall54" type="StaticBody2D" parent="Walls"]
+position = Vector2( 384, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall54"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall54"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall67" type="StaticBody2D" parent="Walls"]
+position = Vector2( 448, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall67"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall67"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall66" type="StaticBody2D" parent="Walls"]
+position = Vector2( 512, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall66"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall66"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall65" type="StaticBody2D" parent="Walls"]
+position = Vector2( 575.923, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall65"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall65"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall64" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall64"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall64"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall71" type="StaticBody2D" parent="Walls"]
+position = Vector2( 768.077, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall71"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall71"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall70" type="StaticBody2D" parent="Walls"]
+position = Vector2( 832.077, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall70"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall70"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall69" type="StaticBody2D" parent="Walls"]
+position = Vector2( 896, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall69"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall69"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall68" type="StaticBody2D" parent="Walls"]
+position = Vector2( 960, 1728 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall68"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall68"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall33" type="StaticBody2D" parent="Walls"]
+position = Vector2( 448, 768 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall33"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall33"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall34" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 640 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall34"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall34"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall23" type="StaticBody2D" parent="Walls"]
+position = Vector2( 192, 640 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall23"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall23"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall24" type="StaticBody2D" parent="Walls"]
+position = Vector2( 128.077, 640 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall24"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall24"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall31" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 768 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall31"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall31"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall32" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 704 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall32"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall32"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall25" type="StaticBody2D" parent="Walls"]
+position = Vector2( 64, 832 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall25"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall25"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall26" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 896 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall26"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall26"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall27" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 831.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall27"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall27"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall87" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 639.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall87"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall87"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall90" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 447.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall90"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall90"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall93" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 575.95 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall93"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall93"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall96" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 383.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall96"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall96"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall28" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 961.563 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall28"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall28"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall29" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 768 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall29"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall29"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall30" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 704 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall30"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall30"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall86" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 576 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall86"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall86"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall85" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 512 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall85"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall85"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall89" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 384 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall89"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall89"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall88" type="StaticBody2D" parent="Walls"]
+position = Vector2( 704, 320 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall88"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall88"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall92" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 511.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall92"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall92"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall91" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 447.975 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall91"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall91"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall95" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 320 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall95"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall95"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Wall94" type="StaticBody2D" parent="Walls"]
+position = Vector2( -128, 256 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Walls/Wall94"]
+modulate = Color( 0.588235, 0.635294, 1, 1 )
+scale = Vector2( 0.915, 0.915 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Walls/Wall94"]
+scale = Vector2( 0.915, 0.915 )
+polygon = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[node name="Portal" parent="." instance=ExtResource( 2 )]
